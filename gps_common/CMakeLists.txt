@@ -25,7 +25,7 @@ find_package(catkin REQUIRED COMPONENTS
 ###################################################
 
 catkin_package(INCLUDE_DIRS include
-               CATKIN_DEPENDS 
+               CATKIN_DEPENDS
                ${DEPS})
 
 ###########
@@ -37,7 +37,7 @@ add_executable(${PROJECT_NAME}/utm_odometry_node src/utm_odometry_node.cpp)
 set_target_properties(${PROJECT_NAME}/utm_odometry_node PROPERTIES OUTPUT_NAME "utm_odometry_node")
 target_link_libraries(${PROJECT_NAME}/utm_odometry_node ${catkin_LIBRARIES})
 add_dependencies(${PROJECT_NAME}/utm_odometry_node
-                 ${catkin_EXPORTED_TARGETS} 
+                 ${catkin_EXPORTED_TARGETS}
                  ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 #############
