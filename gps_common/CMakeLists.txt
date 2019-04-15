@@ -31,7 +31,7 @@ catkin_package(INCLUDE_DIRS include
 ###########
 ## Build ##
 ###########
-
+add_compile_options(-std=c++11)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include ${catkin_INCLUDE_DIRS})
 add_executable(${PROJECT_NAME}/utm_odometry_node src/utm_odometry_node.cpp)
 set_target_properties(${PROJECT_NAME}/utm_odometry_node PROPERTIES OUTPUT_NAME "utm_odometry_node")
